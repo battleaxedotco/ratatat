@@ -8,6 +8,8 @@
 
 ![](https://thumbs.gfycat.com/FearfulDimBuck-size_restricted.gif)
 
+# [Check out the demo site](https://ratatat-demo.netlify.app/) [![Netlify Status](https://api.netlify.com/api/v1/badges/82ed3474-6a7b-4424-afc5-3464beb982d7/deploy-status)](https://app.netlify.com/sites/ratatat-demo/deploys)
+
 # Installation
 
 ```bash
