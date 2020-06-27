@@ -1,7 +1,7 @@
 # ratatat
 
-| [Demo]() | [Installation](#installation) | [Usage](#usage) | [API](#api) | [Examples](#examples) |
-| -------- | :---------------------------: | :-------------: | :---------: | :-------------------: |
+| [Demo](https://ratatat-demo.netlify.app/) | [Installation](#installation) | [Usage](#usage) | [API](#api) | [Examples](#examples) |
+| ----------------------------------------- | :---------------------------: | :-------------: | :---------: | :-------------------: |
 
 
 ### Vue component to easily turn any Lottie animation into a dynamic progress/loading bar:
@@ -68,6 +68,8 @@ Lottie is great and using the `lottie_api` is also great, but there's no easy wa
 | @update    | Number | The reactive value of the slider within (includes easing) |
 | @start     |        |             Fires on first frame of easing between values |
 | @end       |        |              Fires on last frame of easing between values |
+| @finish    |        |                            Fires when percent reaches 100 |
+| @reset     |        |      Fires when loader is reset to 0 after 100 is reached |
 | @mounted   |        |           Fires when component finished mounted lifecycle |
 | @complete  |        |                      Fires on Lottie's `onComplete` event |
 | @DOMLoaded |        |                       Fires on Lottie's `DOMLoaded` event |

@@ -92,7 +92,10 @@ export default {
       if (isNaN(lastVal)) lastVal = 0;
       if (lastVal !== 100) {
         this.createAnimationTimer(val, lastVal);
-      } else this.reset();
+      } else {
+        this.reset();
+        this.createAnimationTimer(val, 0);
+      }
     },
     realPercent(val) {
       this.$emit("update", val);
@@ -118,6 +121,7 @@ export default {
   },
   methods: {
     reset() {
+      this.$emit("reset");
       this.realPercent = 0;
     },
     createAnimationTimer(to, from) {
@@ -140,6 +144,7 @@ export default {
             let temp = Math.floor((to - from) * time);
             let real = temp + from;
             if (self.realPercent !== real) self.realPercent = real;
+            if (self.realPercent >= 100) this.$emit("finish");
           })
         )
         .play();
