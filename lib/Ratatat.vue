@@ -103,9 +103,7 @@ export default {
       let temp = this.options;
       Object.assign(temp, this.defOpts);
       temp["wrapper"] = this.$el.children[0];
-      temp["animationData"] = this.animationData
-        ? this.animationData
-        : require("../animations/wings.json");
+      temp["animationData"] = this.animationData;
       return temp;
     },
   },
